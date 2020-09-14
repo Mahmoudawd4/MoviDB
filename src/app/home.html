@@ -1,0 +1,31 @@
+<!--<p>home works!</p>
+<h1 >welcom {{userName}}</h1>  data binding
+<button class="btn btn-danger" (click)='welcom()'>click</button> event binding
+<input type="text" class="form-control w-50 m-auto"  (keyUp.enter)='welcom($event)'>
+<h1 [style.color]='onSale==true?"red" :"green"'> web design and devlopment</h1>
+-->
+
+
+<input type="text" class="form-control w-50 m-auto" [(ngModel)]='x'>
+<h1> {{x}}</h1>
+
+<table class="table w-75 m-auto py-5">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>DataOffBirth</th>
+            <th>salarry</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.gender}}</td>
+            <td>{{user.dateOffBirth}}</td>
+            <td>{{user.salary}}</td>
+        </tr>
+    </tbody>
+</table>
